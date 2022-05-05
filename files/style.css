@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap");
+body {
+  background-color: #069eb3;
+  font-family: 'Poppins', sans-serif;
+}
+
+.keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.keyboard .alphabet {
+  background-color: #333738;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 12px 0 12px;
+  width: 650px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.keyboard .alphabet .alphabet-letter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 0px 20px #22abe6, 0px 0px 30px #22abe6;
+  color: #22abe6;
+  border-radius: 10px;
+  margin: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.keyboard .alphabet .alphabet-letter:hover {
+  -webkit-box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.content .guess-word {
+  font-size: 50px;
+}
+
+.content h2 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+  margin: 10px;
+}
+
+.content button {
+  border: none;
+  border-top: 2px solid #069eb3;
+  border-bottom: 2px solid #069eb3;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 8px;
+  color: #333738;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.content button:hover {
+  border-top: 2px solid #333738;
+  border-bottom: 2px solid #333738;
+  letter-spacing: 5px;
+}
+
+.guess-info, .guess-remain {
+  background-color: #333738;
+  padding: 8px;
+  border-radius: 8px;
+  color: #22abe6;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */
